@@ -1,0 +1,80 @@
+/*******************************
+Variables
+*******************************/
+/*******************************
+Body Styles
+*******************************/
+.month, #home {
+  height: 100vh;
+  border: 1px;
+  padding: 3%; }
+
+img {
+  height: 200px; }
+
+/*******************************
+Intro
+*******************************/
+form {
+  display: inline-block;
+  position: relative;
+  overflow: hidden; }
+
+submit {
+  cursor: pointer; }
+
+.dropdown-choose {
+  height: 40px;
+  width: 100px;
+  padding: 10px;
+  background-color: white;
+  color: #e74c3c; }
+
+.dropdown-choose > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #3498db;
+  border-radius: 3px;
+  cursor: pointer; }
+
+/*******************************
+Months
+*******************************/
+#january {
+  background-color: #3498db; }
+
+#february {
+  background-color: #e74c3c; }
+
+#march {
+  background-color: #ffc300; }
+
+#april {
+  background-color: #1abc9c; }
+
+#may {
+  background-color: #e67e22; }
+
+#june {
+  background-color: #9b59b6; }
+
+#july {
+  background-color: #e74c3c; }
+
+#august {
+  background-color: #ffc300; }
+
+#september {
+  background-color: #1abc9c; }
+
+#october {
+  background-color: #e67e22; }
+
+#november {
+  background-color: #9b59b6; }
+
+#december {
+  background-color: #34495e; }
+
+/*# sourceMappingURL=main.css.map */

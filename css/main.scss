@@ -1,0 +1,98 @@
+/*******************************
+Variables
+*******************************/
+$yellow: rgba(255, 195, 0, 1);
+$orange: rgba(230, 126, 34,1.0);
+$red: rgba(231, 76, 60,1.0);
+$blue: rgba(52, 152, 219,1.0);
+$purple: rgba(155, 89, 182,1.0);
+$turquoise: rgba(26, 188, 156,1.0);
+$dgrey: rgba(52, 73, 94,1.0);
+$grey: rgba(189, 195, 199, 1);
+
+/*******************************
+Body Styles
+*******************************/
+
+.month, #home {
+  height: 100vh;
+  border: 1px;
+  padding: 3%; }
+ 
+img {
+	height: 200px;
+}
+
+/*******************************
+Intro
+*******************************/
+
+form {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+submit {
+	cursor: pointer;
+}
+
+.dropdown-choose {
+	height: 40px;
+	width: 100px;
+	padding: 10px;
+	background-color: white;
+	color: $red;
+}
+
+
+.dropdown-choose > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: $blue;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/*******************************
+Months
+*******************************/
+
+#january {
+	background-color: $blue;
+}
+#february {
+	background-color: $red;
+}
+#march {
+	background-color: $yellow
+}
+#april {
+	background-color: $turquoise
+}
+#may {
+	background-color: $orange
+}
+#june {
+	background-color: $purple
+}
+#july {
+	background-color: $red
+}
+#august {
+	background-color: $yellow
+}
+#september {
+	background-color: $turquoise
+}
+#october {
+	background-color: $orange
+}
+#november {
+	background-color: $purple
+}
+#december {
+	background-color: $dgrey
+}
+

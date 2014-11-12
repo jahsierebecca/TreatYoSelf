@@ -10,23 +10,50 @@ Body Styles
   padding: 3%; }
 
 img {
-  height: 200px; }
+  height: 200px;
+  margin-top: 50px; }
 
 /*******************************
 Intro
 *******************************/
+.iblock {
+  display: inline-block; }
+
+#prompt {
+  float: left;
+  margin-right: 20px; }
+
+h1 {
+  margin-bottom: 40px; }
+
+h4 {
+  margin: 0; }
+
 form {
-  display: inline-block;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  box-size: border-box;
+  margin-left: 20px; }
+
+#prompt, form {
+  height: 50px;
+  vertical-align: middle; }
+
+#home {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: scroll; }
 
 submit {
   cursor: pointer; }
 
+.theDate {
+  color: #3498db; }
+
 .dropdown-choose {
   height: 40px;
   width: 100px;
-  padding: 10px;
   background-color: white;
   color: #e74c3c; }
 
@@ -37,6 +64,32 @@ submit {
   background: #3498db;
   border-radius: 3px;
   cursor: pointer; }
+
+.treatYoSelf {
+  font-size: 130px;
+  margin: 0 15px;
+  display: inline-block; }
+
+.month h3 {
+  margin-top: 10px;
+  font-size: 100px; }
+
+#submitButton {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px;
+  height: 20em;
+  background-color: #e74c3c;
+  color: white; }
+
+iframe {
+  margin-top: 30px; }
+
+#video {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right; }
 
 /*******************************
 Months

@@ -1,33 +1,51 @@
-var select = document.getElementById("chooseMonth");
-var options = ["January","February","March","April","May","June",
-"July","August","September","October","November","December"];
-for(var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
-    select.appendChild(el);
-}
-
-var select1 = document.getElementById("chooseDay");
-var options = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"];
-for(var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
-    select1.appendChild(el);
-}
+var $button = $("#submitButton"); //selects the submit button and crates a variable for it.
 
 
-var select2 = document.getElementById("chooseYear");
+$button.click(function(){ //when clicked...
+console.log("hheeekllsfdkjf")	
+  var $month = $('#chooseMonth').val();
+  var $day = $('#chooseDay').val(); 
+  var $year = $('#chooseYear').val();
+  var $daystring = $("<span class='theDate'><h2>" + $month + " " + $day + ", " + $year + " huh?... It's time to</h2>" + "</span>");
+  var $treat = $("<h1 class='treatYoSelf' display='inline-block' id='treat'>TREAT</h1>");
+  var $yo = $("<h1 class='treatYoSelf' display='inline-block' id='yo'> YO </h1>");
+  var $self = $("<h1 class='treatYoSelf' display='inline-block' id='self'> SELF!</h1>");
+  var $vid = $('<iframe src="http://38.media.tumblr.com/81733d66449df963afbd208e14ad5943/tumblr_mwf55cXkRX1r683cxo4_250.gif" frameborder="0" display="inline-block" float="right">');
+  $('#alert').append($daystring);
+  $('#alert').append($treat);
+  $('#alert').append($yo);
+  $('#alert').append($self);
+  $($daystring).appendTo('#alert');
+  $($treat).hide().appendTo('#alert').fadeIn(1500);
+  $($yo).hide().appendTo('#alert').fadeIn(3500).delay(800);
+  $($self).hide().appendTo('#alert').fadeIn(5500).delay(1800);
+  $($vid).appendTo('#video').fadeIn(1500);
+  event.preventDefault();
+   // stops the browser from refreshing the page
+});
 
-var options = ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"];
+/*"<span class='theDate'><h1>" + $month + " " + $day + "," + $year + "</h1></span>";
+  $('#alert').append($daystring); 
 
-for(var i = 0; i < options.length; i++) {
-    var opt = options[i];
-    var el = document.createElement("option");
-    el.textContent = opt;
-    el.value = opt;
-    select2.appendChild(el);
-}
+WHY DOESN'T THIS WORK?
+  var $treat = $('Treat');
+  var $yo = $("Yo");
+  var $self = $("Self");
+
+
+/*
+
+  var $button = $("#submitButton"); //selects the submit button and crates a variable for it.
+
+$button.click(function(){ //when clicked...
+console.log("hheeekllsfdkjf")	
+  var $month = $('#chooseMonth').val();
+  var $day = $('#chooseDay').val(); 
+  var $year = $('#chooseYear').val();
+  var $daystring = $("<span class='theDate'><h2>" + $month + " " + $day + ", " + $year + "...</h2><h1>TREAT YO SELF</h1></span>").fadeIn(2000);
+  $('#alert').append($daystring);
+  event.preventDefault(); // stops the browser from refreshing the page
+});
+
+/*"<span class='theDate'><h1>" + $month + " " + $day + "," + $year + "</h1></span>";
+  $('#alert').append($daystring); */

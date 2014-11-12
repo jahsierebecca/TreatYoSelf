@@ -18,11 +18,15 @@
   <![endif]-->
 </head>
 <body>
-  <div id="home">
+<div id="home">
+  <div class="row">
+  <div class="col-md-8">
     <h1>Is it time to treat yo self?</h1>
-    <h4>Let's see, shall we?
+    <div id="prompt">
+        <h4>Let's see, shall we?
     <br>What day is it?</h4>
-    <form>
+    </div>
+    <form class="iblock">
       <select id="chooseMonth" class="dropdown-choose">
         <option value="January">January</option>
         <option value="February">February</option>
@@ -71,9 +75,6 @@
        <option value="31">31</option>
       </select>
       <select id="chooseYear" class="dropdown-choose">
-        <option value="Year">Year</option>
-        <option value="2012">2012</option>
-        <option value="2013">2013</option>
         <option value="2014">2014</option>
         <option value="2015">2015</option>
         <option value="2016">2016</option>
@@ -82,13 +83,20 @@
         <option value="2019">2019</option>
         <option value="2020">2020</option>
       </select>
-      <submit class="submit dropdown-choose">Submit</submit>
+      <submit class="submit dropdown-choose" id="submitButton">Submit</submit>
     </form>
+  </div>
+  <div class="col-md-4" id="video">
+  </div>
+  </div>
+    <div id="alert">
     </div>
+  </div>
   <div class="row month" id="january">
     <div class="col-md-8">
       <h2>January</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/8fn9oF6IPZoEE?html5=true" width="480" height="217" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <div class="col-md-4">
       <img src="img/jan2015.jpg"></div>
@@ -97,89 +105,105 @@
     <div class="col-md-8">
       <h2>February</h2>
       <h3>Treat yo self</h3>
+      
+      <img src="http://www.esquire.com/cm/esquire/images/6V/Tom-and-Donna-reenacting-Toms-Snapchat-to-Donna.jpg">
+      
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/february-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="march">
     <div class="col-md-8">
       <h2>March</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://33.media.tumblr.com/tumblr_mbcvy1GxuN1r98adfo1_250.gif" frameborder="0" height="245" width="245"></iframe><iframe src="http://38.media.tumblr.com/tumblr_mbcvy1GxuN1r98adfo2_250.gif" width="280" frameBorder="0" height="245" width="245"></iframe>
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/march-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="april">
     <div class="col-md-8">
       <h2>April</h2>
       <h3>Treat yo self</h3>
+      <img src="http://www.charactergrades.com/sites/default/files/wp-content/uploads/2011/09/donna_3.jpg">
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/april-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="may">
     <div class="col-md-8">
       <h2>May</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/lAbxg2qCfOwKY?html5=true" width="280" height="288" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>  
+      
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/may-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="june">
     <div class="col-md-8">
       <h2>June</h2>
       <h3>Treat yo self</h3>
+      <img src="http://cdn.smallscreenscoop.com/wp-content/uploads/2011/12/donna-parks-and-recreation-480x279.png">
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/june-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="july">
     <div class="col-md-8">
       <h2>July</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/kFWFRyG3NAf2U?html5=true" width="480" height="264" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/july-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="august">
     <div class="col-md-8">
       <h2>August</h2>
       <h3>Treat yo self</h3>
+      <img src="https://image-cdn.zap2it.com/images/parks-and-rec-treat-yoursel.jpg">
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/august-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="september">
     <div class="col-md-8">
       <h2>September</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/iYfxUuKDF4Tp6?html5=true" width="480" height="270" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/september-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="october">
     <div class="col-md-8">
       <h2>October</h2>
       <h3>Treat yo self</h3>
+      <img src="http://i0.huffpost.com/gen/1382597/thumbs/n-RON-SWANSON-VINE-large.jpg">
+      
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/october-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="november">
     <div class="col-md-8">
       <h2>November</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/ZwH4bccbZ60w0?html5=true" width="480" height="269" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/november-2015-calendar.jpg"></div>
   </div>
   <div class="row month" id="december">
     <div class="col-md-8">
       <h2>December</h2>
       <h3>Treat yo self</h3>
+      <iframe src="http://giphy.com/embed/dgrTPkWt9EBKo?html5=true" width="480" height="216" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <div class="col-md-4">
-      <img src="img/jan2015.jpg"></div>
+      <img src="img/december-2015-calendar.jpg"></div>
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
